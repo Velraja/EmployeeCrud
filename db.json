@@ -1,0 +1,34 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "employeename": "Velraj",
+      "preference": "email",
+      "email": "abc@abc.com",
+      "confirmemail": "abc@abc.com",
+      "phone": "456546553",
+      "Skills": [
+        {
+          "Skillname": "C#",
+          "Experience": "1",
+          "Proficiency": "Advanced"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "employeename": "dd",
+      "preference": "email",
+      "email": "d@abc.com",
+      "confirmemail": "d@abc.com",
+      "phone": "43565656",
+      "Skills": [
+        {
+          "Skillname": "d",
+          "Experience": "3",
+          "Proficiency": "Beginner"
+        }
+      ]
+    }
+  ]
+}

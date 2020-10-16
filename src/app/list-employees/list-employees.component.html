@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="table-responsive mt-4" *ngIf="employees && employees.length">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr class="bg-primary">
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Email
+                            </th>
+                            <th>
+                                Phone
+                            </th>
+                            <th>
+                                Contact Preference
+                            </th>
+                            <th>
+                                Action
+                            </th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+
+                        <tr *ngFor="let employee of employees">
+                            <td>
+                                {{employee.employeename}}
+                            </td>
+                            <td>
+                                {{employee.email}}
+                            </td>
+                            <td>
+                                {{employee.phone}}
+                            </td>
+                            <td>
+                                {{employee.preference}}
+                            </td>
+                            <td>
+                                <button class="btn btn-primary" (click)="EditEmployee(employee.id)">Edit</button>
+                                <button class="btn btn-danger float-right"
+                                    (click)="DeleteEmployee(employee.id)">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

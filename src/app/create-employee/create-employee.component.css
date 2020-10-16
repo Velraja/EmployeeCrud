@@ -1,0 +1,13 @@
+.disabled
+{
+    pointer-events: none;
+}
+.title
+{
+    font-size: 30px;
+}
+hr
+{
+    border:1px solid silver;
+    background-color: silver;    
+}
